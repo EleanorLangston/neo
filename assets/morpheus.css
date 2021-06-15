@@ -1,0 +1,292 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-grow: 1;
+  margin: 1rem auto;
+  width: 40%
+}
+
+.buttons input {
+	background-color: #dfdfdf;
+	border: 2px solid #dfdfdf;
+	font-size: 1.15rem;
+	font-family: sans-serif;
+	border-radius: 3px;
+	margin: 0 .25rem;
+	padding: 1% 0;
+	flex: 50%;
+}
+
+#search {
+  width: 100%;
+  padding: .5rem 1rem;
+  box-sizing: border-box;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  border: 2px solid #DFDFDF;
+  border-radius: 5px;
+}
+
+#search:focus {
+  border-color: #000;
+  box-shadow: 0 0 15px 0 #f4ec1888;
+}
+
+#show {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.building {
+  display: flex;
+  flex-direction: row;
+  font-family: Barlow Condensed, Verdana, monospace,sans-serif;
+  border: 2px #DFDFDF solid;
+  border-radius: 10px;
+  padding: .5rem 1rem;
+  margin: .5rem;
+  width: 40%;
+  flex-basis: auto;
+}
+
+.building-update {
+  display: flex;
+  flex-direction: row;
+  font-family: Barlow Condensed, Verdana, monospace,sans-serif;
+  border: 2px #DFDFDF solid;
+  border-radius: 10px;
+  padding: .5rem 1rem;
+  margin: .5rem;
+  width: 40%;
+  min-width: max-content;
+  flex-basis: auto;
+}
+
+.building_col {
+  flex: 55%;
+  position: relative;
+  overflow: visible;
+  max-height: max-content;
+}
+
+.badge_div {
+  display: flex;
+  margin: .5rem;
+  position: relative;
+}
+
+.aon {
+	border: 1px solid #00a8f7;
+	border-radius: 5px;
+  color: #00a8f7;
+  white-space: pre;
+	text-transform: uppercase;
+	font-family: monospace;
+	font-size: .8rem;
+	margin: auto .5rem;
+	padding: 0 .25rem;
+  user-select: none;
+}
+
+.aon[data-aon="0"] {
+  border-color: #dfdfdf;
+  color: #aaa;
+}
+
+.bulk {
+	border: 1px solid #ff9019;
+	border-radius: 5px;
+  color: #ff9019;
+  white-space: pre;
+	text-transform: uppercase;
+	font-family: monospace;
+	font-size: .8rem;
+	margin: auto .5rem;
+	padding: 0 .25rem;
+  user-select: none;
+}
+
+.bulk[data-bulk="0"] {
+  border-color: #dfdfdf;
+  color: #aaa;
+}
+
+.panel {
+  	border: 1px solid #6b6abd;
+  	border-radius: 5px;
+    color: #6b6abd;
+    white-space: pre;
+  	text-transform: uppercase;
+  	font-family: monospace;
+  	font-size: .8rem;
+  	margin: auto .5rem;
+  	padding: 0 .25rem;
+    user-select: none;
+}
+
+.panel[data-panel="0"] {
+  border-color: #dfdfdf;
+  color: #aaa;
+}
+
+.badge_div [data-type="SFU"] {
+  border: 1px solid #772c6d;
+  border-radius: 5px;
+  color: #772c6d;
+  white-space: pre;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: .8rem;
+  margin: auto .5rem;
+  padding: 0 .25rem;
+  user-select: none;
+}
+
+.badge_div [data-type="MDU-SA"] {
+  border: 1px solid #8d356d;
+  border-radius: 5px;
+  color: #8d356d;
+  white-space:pre;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: .8rem;
+  margin: auto .5rem;
+  padding: 0 .25rem;
+  user-select: none;
+}
+
+.badge_div [data-type="MDU"] {
+  border: 1px solid #a1406c;
+  border-radius: 5px;
+  color: #a1406c;
+  white-space: pre;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: .8rem;
+  margin: auto .5rem;
+  padding: 0 .25rem;
+  user-select: none;
+}
+
+.address_div {
+  margin: 2rem auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.address_div p{
+  margin: .5rem;
+  margin-left: 1rem;
+}
+
+.address_div input[type="button"] {
+  background-color: #fff;
+	border: 2px solid #999;
+  color: #777;
+	font-size: .85rem;
+	font-family: sans-serif;
+	border-radius: 3px;
+	margin-left: 1rem;
+  margin-right: auto;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+	padding: .15rem 1rem;
+  flex-basis: auto;
+  align-self: flex-end;
+}
+
+.streets_div input[type="button"]:active {
+  border-color: #000;
+  color: #000;
+}
+
+.streets_div {
+  cursor: copy;
+}
+
+.streets_div summary{
+  cursor: pointer;
+}
+
+.address_div input[type="text"]{
+  margin-left: 1rem;
+  width: 60%
+}
+
+.update_btn, #insert {
+  background-color: #fff;
+	border: 2px solid #999;
+  color: #777;
+	font-size: .85rem;
+	font-family: sans-serif;
+	border-radius: 3px;
+	margin: .5rem;
+	padding: .15rem 1rem;
+}
+
+.delete_btn {
+  background-color: #fff;
+	border: 2px solid #f00;
+  color: #d00;
+	font-size: .85rem;
+	font-family: sans-serif;
+	border-radius: 3px;
+	margin: .5rem;
+	padding: .15rem 1rem;
+}
+
+.modify_btn {
+	background-color: #fff;
+	border: 2px solid #dfdfdf;
+  color: #aaa;
+	font-size: .85rem;
+	font-family: sans-serif;
+	border-radius: 3px;
+	position: absolute;
+	margin: .5rem;
+	padding: .15rem 1rem;
+	top: auto;
+	left: auto;
+	bottom: 0;
+	right: 0;
+}
+
+.modify_btn:active, .update_btn:active, .delete_btn:active, #insert:active {
+  border-color: #000;
+  color: #000;
+}
+
+.mod_buttons {
+  position: absolute;
+  margin: .5rem;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+h2 {
+  margin-bottom: .5rem;
+}

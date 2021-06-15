@@ -1,0 +1,33 @@
+<div class="building" id="new">
+  <div class="building_col">
+    <label for="build_name">Building name:</label><br>
+    <input type="text" name="build_name" maxlength="64" required><br>
+
+  <label>Hours:</label><br>
+  <input type="text" name="open" maxlength="4" size="4"> -
+  <input type="text" name="close" maxlength="4" size="4"><br>
+  <label>Job Length:</label>
+  <input type="text" name="length" maxlength="3" size="3"><br>
+  <label>Techs Needed:</label>
+  <input type="text" name="techs" maxlength="3" size="3"><br>
+  <input type="text" name="switch" maxlength="32" value="Switch Name" hidden><br>
+  <input type="text" name="panel_loc" maxlength="64" value="Panel Location" hidden><br>
+  <label>Notes:</label><br>
+  <input type="text" name="notes" maxlength="256">
+
+  <div class="badge_div">
+    <p class="type" data-type="MDU">MDU</p>
+    <p class="bulk" data-bulk="0">bulk</p>
+    <p class="aon" data-aon="0">aon</p>
+    <p class="panel" data-panel="0">panel</p>
+  </div>
+</div>
+<div class="building_col">
+  <details class="address_div" open>
+    <summary>Addresses</summary>
+    <input class="address" type="text" maxlength="64"><br>
+    <input type="button" id="addrspam" onclick="add_addr()" value="Add Address">
+    </details>
+
+  <input type="button" id="insert" value="Add">
+</div>
