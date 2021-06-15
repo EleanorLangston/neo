@@ -37,7 +37,3 @@ To modify or delete an existing address, expand the street name of the address y
 ## Accessing Neo
 
 Neo is temporarily hosted on a personal laptop- availability may be limited until an actual hosting solution is implemented.
-
-
-
-##                     [_Click here to enter the Building Matrix_](http://100.127.242.59/)
